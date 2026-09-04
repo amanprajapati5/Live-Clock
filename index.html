@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>World Clock</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="clock-box">
+
+            <h1>World Clock</h1>
+
+            <p class="subtitle">
+                Check the current time around the world
+            </p>
+
+            <div class="main-clock">
+                <h2 id="time">00:00:00</h2>
+                <p id="date">Loading...</p>
+            </div>
+
+            <button id="browseBtn">
+                Browse Time
+            </button>
+
+        </div>
+
+
+        <div id="countrySection" class="country-section">
+
+            <h2>World Time</h2>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search city..."
+            >
+
+            <div id="countryList"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

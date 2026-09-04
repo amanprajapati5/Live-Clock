@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.clock-box {
+    background: white;
+    text-align: center;
+    padding: 50px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.clock-box h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 35px;
+}
+
+.main-clock {
+    background: #f7f8fa;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.main-clock h2 {
+    font-size: 50px;
+    color: #222;
+    letter-spacing: 2px;
+}
+
+.main-clock p {
+    margin-top: 10px;
+    color: #666;
+}
+
+#browseBtn {
+    border: none;
+    background: #007bff;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#browseBtn:hover {
+    background: #0056b3;
+}
+
+.country-section {
+    display: none;
+    background: white;
+    margin-top: 25px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.country-section h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+#search {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.country-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    border-bottom: 1px solid #eee;
+}
+
+.country-card:last-child {
+    border-bottom: none;
+}
+
+.country-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.country-time {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .clock-box {
+        padding: 35px 20px;
+    }
+
+    .clock-box h1 {
+        font-size: 32px;
+    }
+
+    .main-clock h2 {
+        font-size: 38px;
+    }
+
+    .country-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
