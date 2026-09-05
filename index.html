@@ -1,11 +1,11 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>World Clock</title>
+    <title>World Clock | Global Time</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,39 +14,106 @@
 
     <div class="container">
 
-        <div class="clock-box">
+        <!-- Main Clock Section -->
+        <main class="clock-box">
 
-            <h1>World Clock</h1>
+            <!-- Header -->
+            <header class="clock-header">
 
-            <p class="subtitle">
-                Check the current time around the world
-            </p>
+                <div class="brand">
+                    <span class="brand-icon">🌍</span>
 
-            <div class="main-clock">
-                <h2 id="time">00:00:00</h2>
-                <p id="date">Loading...</p>
+                    <div>
+                        <h1>World Clock</h1>
+                        <p class="brand-text">Global time, at a glance</p>
+                    </div>
+                </div>
+
+                <div class="live-status">
+                    <span class="status-dot"></span>
+                    Live
+                </div>
+
+            </header>
+
+
+            <!-- Main Clock -->
+            <section class="hero-clock">
+
+                <p class="clock-label">CURRENT TIME</p>
+
+                <div class="location-name">
+                    🇮🇳 New Delhi, India
+                </div>
+
+                <div class="main-clock">
+
+                    <h2 id="time">00:00:00</h2>
+
+                    <p id="date">Loading...</p>
+
+                </div>
+
+                <p class="clock-info">
+                    Indian Standard Time · UTC +05:30
+                </p>
+
+                <button id="browseBtn">
+                    Browse World Time
+                </button>
+
+            </section>
+
+        </main>
+
+
+        <!-- World Time Section -->
+        <section id="countrySection" class="country-section">
+
+            <div class="section-header">
+
+                <div>
+                    <p class="section-label">EXPLORE</p>
+
+                    <h2>World Time</h2>
+
+                    <p class="section-description">
+                        Check the current time in cities around the world.
+                    </p>
+                </div>
+
             </div>
 
-            <button id="browseBtn">
-                Browse Time
-            </button>
 
-        </div>
+            <!-- Search -->
+            <div class="search-wrapper">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search city..."
+                    autocomplete="off"
+                >
+
+            </div>
 
 
-        <div id="countrySection" class="country-section">
-
-            <h2>World Time</h2>
-
-            <input
-                type="text"
-                id="search"
-                placeholder="Search city..."
-            >
-
+            <!-- City List -->
             <div id="countryList"></div>
 
-        </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <p>
+                World Clock · Built with HTML, CSS & JavaScript
+            </p>
+
+        </footer>
 
     </div>
 
